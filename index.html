@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> LD_LOOKBOOK </title>
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+
+        <link rel = "stylesheet" type = "text/css" href = "assets/main.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    </head>
+
+    <body>
+        <div id = "email-container">
+            <h1>Enter your email to preview the LD LOOKBOOK </h1>
+
+            <input id = "username-input" type = "text" placeholder="enter username" autofocus = "true" required/>
+            <input id = "email-input" type = "email" placeholder="enter email" autofocus = "true" required/>
+            <button id = "email-confirm" value = "ENTER"> ENTER </button>
+        </div>
+
+        <div id = "wrapper">
+            <div id = "canvas-container"></div>
+
+            <header>
+                <h1> LIFE_DESIGN_LOOKBOOK_1 </h1>
+                <img id = "logo" src = "media/LIFE-DESIGN-LOGO.png" />
+            </header>
+
+            <div id = "img-container">
+                <img src = "media/1.jpg" />
+                <img src = "media/2.jpg" />
+                <img src = "media/3.jpg" />
+                <img src = "media/4.jpg" />
+                <img src = "media/5.jpg" />
+                <img src = "media/6.jpg" />
+                <img src = "media/7.jpg" />
+                <img src = "media/8.jpg" />
+                <img src = "media/9.jpg" />
+                <img id = "xylk-logo" src = "media/xylk.png"/>
+            </div>
+        </div>
+
+        <script type = "text/javascript" src = "scripts/three.js"></script>
+        <script type = "text/javascript" src = "scripts/OrbitControls.js"></script>
+	    <script type = "text/javascript" src = "scripts/main.js"></script>
+    </body>
+
+    <!-- firestore firebase CDN-->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script type = "text/javascript" src = "scripts/fb_data.js"></script>
+</html>
